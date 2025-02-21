@@ -1,0 +1,11 @@
+[Unit]
+Description=Run monitoring script every minute
+
+[Timer]
+OnUnitInactiveSec=1min
+AccuracySec=10ms
+Unit=monitoring.service
+
+[Install]
+WantedBy=timers.target
+

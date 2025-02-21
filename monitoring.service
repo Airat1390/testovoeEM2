@@ -1,0 +1,9 @@
+[Unit]
+Description=Monitoring script for test process
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/monitoring_script.sh
+Restart=always
+User=monitoring
+
